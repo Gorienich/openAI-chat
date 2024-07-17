@@ -33,7 +33,7 @@ def ask():
         prompt=question,
         max_tokens=150
     )
-
+    # get answer
     answer = response.choices[0].text.strip()
 
     # Save the question and answer to the database
