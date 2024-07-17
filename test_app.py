@@ -1,6 +1,7 @@
 import pytest
 from app import app, db, QuestionAnswer
 
+# test db
 @pytest.fixture
 def client():
     app.config['TESTING'] = True
@@ -9,7 +10,7 @@ def client():
         with app.app_context():
             db.create_all()
         yield client
-
+# test question - answer
 def test_ask_question(client):
     response = client.post('/ask', json={'question': 'What is the day today?'})
     assert response.status_code == 200
