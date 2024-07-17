@@ -9,7 +9,7 @@ This project creates a simple Flask server that exposes an endpoint to ask a que
 - Docker
 - Docker Compose
 
-### Steps
+### Steps   
 1. Clone the repository.
 2. Navigate to the project directory.
 3. Create a `.env` file and add your OpenAI API key:
